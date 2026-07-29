@@ -1,0 +1,16 @@
+import HautevilleHouse.DistributionIntegersSpecifiedMultiplicativeConstraintsCanonicalLaneLean.FactorisationIntegralDomain
+import HautevilleHouse.DistributionIntegersSpecifiedMultiplicativeConstraintsCanonicalLaneLean.MultiplicativeConstraintPackage
+
+namespace HautevilleHouse
+namespace DistributionIntegersSpecifiedMultiplicativeConstraintsCanonicalLaneLean
+
+structure DistributionInteger where
+  value : Nat
+  factorisation : List (Nat × Nat)
+  constraintSatisfied : Prop
+
+def DistributionIntegersClosed (D : DistributionInteger) : Prop :=
+  D.constraintSatisfied
+
+end DistributionIntegersSpecifiedMultiplicativeConstraintsCanonicalLaneLean
+end HautevilleHouse
